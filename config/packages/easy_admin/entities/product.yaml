@@ -1,4 +1,4 @@
 easy_admin:
-  entities:
-    Product:
-      class: App\Entity\Product
+    entities:
+        Product:
+            class: App\Entity\Product

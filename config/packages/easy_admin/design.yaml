@@ -1,4 +1,4 @@
 easy_admin:
-  site_name: 'Backend'
-  design:
-    brand_color: '#1ABC9C'
+    site_name: 'Backend'
+    design:
+        brand_color: '#1ABC9C'

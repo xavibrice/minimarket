@@ -1,4 +1,4 @@
 easy_admin:
-  entities:
-    Image:
-      class: App\Entity\Image
+    entities:
+        Image:
+            class: App\Entity\Image

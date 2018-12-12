@@ -1,4 +1,17 @@
 easy_admin:
-  entities:
-    Category:
-      class: App\Entity\Category
+    entities:
+        Category:
+            class: App\Entity\Category
+            list:
+                title: '%%entity_label%% listing'
+                help: 'The list view overrides the global help message'
+                fields:
+                    - id
+                    - name
+                    - products
+            show:
+                title: '%%entity_label%% (#%%entity_id%%)'
+            form:
+                fields:
+                    - { property: 'name', type: 'text', label: 'Nombre' }
+                    - products
