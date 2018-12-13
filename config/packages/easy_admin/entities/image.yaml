@@ -2,3 +2,15 @@ easy_admin:
     entities:
         Image:
             class: App\Entity\Image
+            form:
+                fields:
+                    - { property: 'imageFile', type: 'vich_image' }
+                    - product
+            list:
+                fields:
+                    - id
+                    - { property: 'image', template: 'vich_uploader_image.html.twig', type: 'image', base_path: '%app.path.product_images%' }
+                    - product
+            show:
+                fields:
+                    - { property: 'image', type: 'image', base_path: '%app.path.product_images%' }

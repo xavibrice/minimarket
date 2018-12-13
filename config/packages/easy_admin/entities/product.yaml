@@ -2,3 +2,11 @@ easy_admin:
     entities:
         Product:
             class: App\Entity\Product
+            form:
+                fields:
+                    - name
+                    - user
+                    - category
+                    - images
+#                    https://symfonycasts.com/screencast/easyadminbundle/collection-type seguir este link para terminar
+#                    - { property: 'images', type: 'collection', type_options: { entry_type: 'App\Form\ImageType' } }
