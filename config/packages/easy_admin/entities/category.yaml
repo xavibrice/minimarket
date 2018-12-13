@@ -8,6 +8,7 @@ easy_admin:
                 fields:
                     - id
                     - name
+                    - state
                     - products
             show:
                 title: '%%entity_label%% (#%%entity_id%%)'
@@ -15,3 +16,4 @@ easy_admin:
                 fields:
                     - { property: 'name', type: 'text', label: 'Nombre' }
                     - products
+                    - state

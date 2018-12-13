@@ -1,0 +1,7 @@
+easy_admin:
+    entities:
+        sub_category:
+            class: App\Entity\SubCategory
+            label: 'Sub Category'
+            list:
+                title: '%%entity_label%%'
