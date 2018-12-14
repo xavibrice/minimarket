@@ -7,6 +7,6 @@ easy_admin:
                     - name
                     - user
                     - category
-                    - images
+#                    - images
 #                    https://symfonycasts.com/screencast/easyadminbundle/collection-type seguir este link para terminar
-#                    - { property: 'images', type: 'collection', type_options: { entry_type: 'App\Form\ImageType' } }
+                    - { property: 'images', type: 'collection', type_options: { entry_type: 'App\Form\ImageType', allow_delete: true, allow_add: true, by_reference: false } }

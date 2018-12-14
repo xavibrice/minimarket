@@ -10,10 +10,11 @@ easy_admin:
                     - name
                     - state
                     - products
+                    - subCategories
             show:
                 title: '%%entity_label%% (#%%entity_id%%)'
             form:
                 fields:
                     - { property: 'name', type: 'text', label: 'Nombre' }
-                    - products
                     - state
+                    - { property: 'subCategories', type: 'collection', type_options: { entry_type: 'App\Form\SubCategoryType', allow_delete: true, allow_add: true, by_reference: false } }
