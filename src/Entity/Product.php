@@ -24,7 +24,7 @@ class Product
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Image", mappedBy="product", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="App\Entity\Image", mappedBy="product", cascade={"persist"}, orphanRemoval=true)
      */
     private $images;
 

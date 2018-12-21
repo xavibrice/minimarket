@@ -31,7 +31,7 @@ class Category
     private $products;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\SubCategory", mappedBy="category")
+     * @ORM\OneToMany(targetEntity="App\Entity\SubCategory", mappedBy="category", cascade={"persist"})
      */
     private $subCategories;
 
